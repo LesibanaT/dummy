@@ -6,10 +6,13 @@ let db = require('..//db.js')
 router.get('/', function(req, res, next) {
   res.render('signup');
 });
-
+router.post('/api/signup',function (req,res){
+	res.redirect(req.baseUrl + '/homepage');
+});
 router.get('/homepage', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
+
 
 router.get('/database', function (req, res) {
 // Make a query to the database
@@ -36,6 +39,7 @@ Error: err
 })
 })
 })
+
 
 
 module.exports = router;
