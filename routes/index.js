@@ -4,9 +4,12 @@ let db = require('..//db.js')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('signup');
 });
 
+router.get('/homepage', function(req, res, next) {
+  res.render('index', { title: 'Express' });
+});
 
 router.get('/database', function (req, res) {
 // Make a query to the database
