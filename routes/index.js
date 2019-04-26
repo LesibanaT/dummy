@@ -13,6 +13,7 @@ router.get('/homepage', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+// i tried my best to comment
 
 router.get('/database', function (req, res) {
 // Make a query to the database
