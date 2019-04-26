@@ -23,7 +23,7 @@ let connectionError = null
 let pools = new mssql.ConnectionPool(config)
 .connect()
 .then(pool => {
-console.log('Connected to DB')
+console.log('Connected to DATABASE')
 return pool
 })
 .catch(err => {
